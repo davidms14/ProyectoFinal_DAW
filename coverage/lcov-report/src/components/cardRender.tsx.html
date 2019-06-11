@@ -1,0 +1,764 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/components/cardRender.tsx</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="..\..\prettify.css" />
+    <link rel="stylesheet" href="..\..\base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(..\..\sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="..\..\index.html">All files</a> / <a href="index.html">src/components</a> cardRender.tsx
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>28/28</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>21/21</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>7/7</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>28/28</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">43x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">43x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">62x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">25x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">37x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">62x</span>
+<span class="cline-any cline-yes">25x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">37x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">62x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">62x</span>
+<span class="cline-any cline-yes">62x</span>
+<span class="cline-any cline-yes">182x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">62x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">62x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">62x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">62x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">62x</span>
+<span class="cline-any cline-yes">60x</span>
+<span class="cline-any cline-yes">25x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">25x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">35x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">35x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">62x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import '../index.css';
+import '../style.css';
+import * as React from 'react';
+import { withTranslation, WithTranslation } from 'react-i18next';
+import { getCurrentLanguage } from '../i18n';
+import moment from 'moment';
+&nbsp;
+/**
+ * @param cardRender - Esta clase funciona como un componente para Tile ya que es la encargada 
+ * de contener la infomación que se mostrará en las tarjetas, los datos de los clientes, fechas, muestras
+ * de estas... Además tendrá unos iconos que nos permitirá conocer en todo momento el estado de las tarjetas
+ * que estamos mostrando. Con estos iconos que ejercen las funciones de botón podremos visualizar un reporte
+ * de manera individual, observar las muestras enlazadas a dicho reporte y descargar el reporte seleccionado.
+ */
+&nbsp;
+export interface Data {
+    id: string;
+    reportNumber: string;
+    client: string;
+    entryDate: Date;
+    expectedDate: Date;
+    status: string;
+    reference: string;
+    certificate: string;
+}
+&nbsp;
+interface Props {
+    data: Data;
+}
+&nbsp;
+interface CardRenderState {
+    data: Data;
+    isLoadSamples: boolean;
+    hasMore: boolean;
+}
+&nbsp;
+export type CardRenderPropsWithTranslation = Props &amp; WithTranslation;
+&nbsp;
+export class CardRender extends React.Component&lt;CardRenderPropsWithTranslation, CardRenderState&gt; {
+    public constructor(props: CardRenderPropsWithTranslation) {
+        super(props);
+&nbsp;
+        this.state = {
+            data: this.props.data,
+            isLoadSamples: false,
+            hasMore: true,
+        };
+    }
+&nbsp;
+    /**
+     * 
+     * @returns {string} Devuelve string
+     * @example
+     * //Example funcion
+     * @description
+     * //Con esta función podemos controlar el estado y saber si
+     * se ha acabado de trabajar en un reporte o sigue en proceso. Esto puede saberse grácias a los iconos
+     * que nos ayudan a identificarlo.
+     * @param {string} status - Hace refencia al estado del reporte.
+     * 
+     */
+    private getStatus(status: string): string {
+        if (status === "finalized") {
+            /** Tarea finalizada */
+            return status = "icon-checkbox-checked iconosTarjetas";
+        }
+        else {
+            /** Tarea por finalizar */
+            return status = "icon-hour-glass iconosTarjetas"
+        }
+    }
+&nbsp;
+    /**
+     * @returns {string} Devuelve string
+     * @example
+     * //Ejemplo funcion
+     * @description
+     * //Esta función simplemente permite saber el significado del icono que
+     * nos indica el estado del reporte. Así al pasar el ratón por encima de este podemos saber 
+     * que significa.
+     * @param {string} title - Hace refencia al estado del reporte.
+     */
+&nbsp;
+    private getTitle(title: string): string {
+        if (title === "finalized") {
+            return title = this.props.i18n.t('status.finalized');
+        }
+        else {
+            return title = this.props.i18n.t('status.inprogress');
+        }
+    }
+&nbsp;
+    /**
+     * @example
+     * //Example funcion
+     * @description
+     * //La función se encarga de cargar las muestras, también modifica el estado de estas
+     * ya que no siempre sacará las mismas, sino que deberá sacar la muestras enlazadas al reporte.
+     * @param {boolean} isLoadSample - Controla si las muestras se han cargado
+     */
+&nbsp;
+    private getAlert(isLoadSample: boolean): void {
+        /*var newState = this.state.data;*/
+        this.setState({ /*data: newState,*/ isLoadSamples: isLoadSample });
+    }
+&nbsp;
+&nbsp;
+    public render(): JSX.Element {
+        /** Almacena el contenido de la tarjeta, se mostrará información de la tarjeta o las muestras */
+        let content = [];
+&nbsp;
+&nbsp;
+        /** Antes se tomaban las muestras desde otro documento, ahora al ser un campo dentro del actual JSON accedemos a dicho campo
+         * y lo metemos en un array. En cada posición se inserta una muestra, estas se separan por comas.
+         */
+        let references: string[] = this.state.data.reference.split(', ');
+        let notEmptyReferences: string[] = references.filter((element: string): boolean =&gt; {
+            return element !== undefined &amp;&amp; element != null &amp;&amp; element.trim() !== '';
+        });
+&nbsp;
+        /** Este icono nos mostrará las muestras, si estamos en ellas desaparece. */
+        const buttonToShowSamples =
+            (notEmptyReferences.length &gt; 0 &amp;&amp; !this.state.isLoadSamples) ?
+                &lt;i title={this.props.i18n.t('icons.samples')} className="icon-file-empty iconosTarjetas"
+                    key={'buttonToShowSamples_'.concat(this.state.data.id)}
+                    onClick={this.getAlert.bind(this, true)}
+                &gt;
+                &lt;/i&gt;
+                :
+                null;
+&nbsp;
+        /** Con ese icono podremos visualizar el reporte */
+        const buttonToShow =
+            this.state.data.certificate === "true" ?
+                &lt;i title={this.props.i18n.t('icons.detail')} className="icon-link iconosTarjetas" &gt;&lt;/i&gt;
+                :
+                null;
+&nbsp;
+        /** Con ese icono podremos descargar el reporte */
+        const buttonToDownload =
+            this.state.data.status === "finalized" ?
+                &lt;i title={this.props.i18n.t('icons.download')} className="icon-download3 iconosTarjetas" &gt;&lt;/i&gt;
+                :
+                null;
+&nbsp;
+        /** Si estamos viendo las muestras, para volver a los datos del reporte pulsaremos aqui. */
+        const buttonToClose =
+            &lt;i title={this.props.i18n.t('icons.cerrar')} className="icon-cross iconoCerrar"
+                key={'buttonToCloseSamples_'.concat(this.state.data.id)}
+                onClick={this.getAlert.bind(this, false)}
+            &gt;&lt;/i&gt;;
+&nbsp;
+        /** Contiene los datos a mostrar en la tarjeta */
+        if (!this.state.isLoadSamples) {
+            if (this.state.data.status === "finalized") {
+                moment.locale(getCurrentLanguage());
+&nbsp;
+                content.push(
+&nbsp;
+                    &lt;div key={'div_report_'.concat(this.state.data.id)}&gt;
+                        &lt;b title={this.props.i18n.t('home.filters.client')}&gt;{this.props.i18n.t('home.filters.client')}:&lt;/b&gt; {this.state.data.client}
+                        &lt;br /&gt;
+                        &lt;b title={this.props.i18n.t('home.filters.entry')}&gt;{this.props.i18n.t('home.filters.finish')}:&lt;/b&gt; {moment(this.state.data.entryDate).format('L')}
+                        &lt;br /&gt;
+                        &lt;b title={this.props.i18n.t('home.filters.expected')}&gt;{this.props.i18n.t('home.filters.timed')}:&lt;/b&gt; {moment(this.state.data.expectedDate).add(5, 'years').format('L')}
+                    &lt;/div&gt;
+                );
+            } else {
+                moment.locale(getCurrentLanguage());
+&nbsp;
+                content.push(
+&nbsp;
+                    &lt;div key={'div_report_'.concat(this.state.data.id)}&gt;
+                        &lt;b title={this.props.i18n.t('home.filters.client')}&gt;{this.props.i18n.t('home.filters.client')}:&lt;/b&gt; {this.state.data.client}
+                        &lt;br /&gt;
+                        &lt;b title={this.props.i18n.t('home.filters.entry')}&gt;{this.props.i18n.t('home.filters.entry')}:&lt;/b&gt; {moment(this.state.data.entryDate).format('L')}
+                        &lt;br /&gt;
+                        &lt;b title={this.props.i18n.t('home.filters.expected')}&gt;{this.props.i18n.t('home.filters.expected')}:&lt;/b&gt; {moment(this.state.data.expectedDate).format('L')}
+                    &lt;/div&gt;
+                );
+            }
+        }
+&nbsp;
+        /** Muestras los reportes asociados a la tarjeta*/
+        else if (this.state.data.reference.trim() !== '') {
+            content.push(buttonToClose);
+            references.forEach((element: string, index: number): void =&gt; {
+                content.push(
+                    &lt;div key={'div_reference_'.concat(index.toString())}&gt;
+                        &lt;div&gt;&lt;b&gt;-&lt;/b&gt; {element}&lt;/div&gt;
+                    &lt;/div&gt;
+                );
+            });
+        }
+&nbsp;
+        /** Devuelve la esctrutura de la tarjeta, esta consta de un HEADER donde encontramos el estado y el número de reporte. 
+         * Ambas cosas siempre estarán en ese sitio.
+         * 
+         * Seguidamente, tenemos el apartado de CONTENT, el cual si que varia dependiendo de si estamos mostrando la información
+         * de la tarjeta o las muestras.
+         * 
+         * Para acabar tendriamos un apartado de ACTIONS, este contiene los tres botones de detalles, descarga y muestras y al igual que la cabecera
+         * estos siempre ocuparán ese lugar.
+          */
+        return (
+            &lt;div className='e-card'&gt;
+&nbsp;
+                &lt;div className='e-card-header'&gt;
+                    &lt;div className='e-card-header-title' title={this.props.i18n.t('home.table.reportNumber')}&gt;
+                        &lt;i title={this.getTitle(this.state.data.status)}
+                            className={this.getStatus(this.state.data.status)}&gt;
+                        &lt;/i&gt;{this.state.data.reportNumber}
+                    &lt;/div&gt;
+                &lt;/div&gt;
+&nbsp;
+                &lt;div className='e-card-content' style={{ overflowY: 'auto' }}&gt;
+                    {content}
+                &lt;/div&gt;
+&nbsp;
+                &lt;div className='e-card-actions iconos'&gt;
+                    {buttonToShow}
+                    {buttonToShowSamples}
+                    {buttonToDownload}
+                &lt;/div&gt;
+            &lt;/div&gt;
+        );
+    }
+}
+&nbsp;
+&nbsp;
+export default withTranslation()(CardRender);
+&nbsp;
+&nbsp;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Jun 05 2019 12:32:56 GMT+0200 (GMT+02:00)
+</div>
+</div>
+<script src="..\..\prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="..\..\sorter.js"></script>
+</body>
+</html>

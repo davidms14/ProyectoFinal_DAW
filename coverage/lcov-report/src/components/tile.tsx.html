@@ -1,0 +1,605 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/components/tile.tsx</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="..\..\prettify.css" />
+    <link rel="stylesheet" href="..\..\base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(..\..\sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="..\..\index.html">All files</a> / <a href="index.html">src/components</a> tile.tsx
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">83.87% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>26/31</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">50% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>5/10</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">88.89% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>8/9</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">83.87% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>26/31</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">16x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">40x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">56x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">56x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import * as React from 'react';
+import InfiniteScroll from 'react-infinite-scroll-component';
+import { serverData as serverAllData } from '../data-source';
+import { Data } from './cardRender';
+import CardRender from './cardRender';
+import { withTranslation, WithTranslation } from 'react-i18next';
+&nbsp;
+/**
+ * @param Tile - El Tile contiene todos los reportes alojados a su vez en un contenedor.
+ * Está conectada con el componente de cardRender.
+ * 
+ * Primero encontramos las funciones para tomar los datos de las tarjetas de lo que sería 
+ * el servidor y la función para cargar las "páginas" con un número determinado de
+ * componentes.
+ * 
+ * Tras el render que será lo que muestre la vista de nuestro componente, encontramos 
+ * los valores que hacen referecia al componente del Scroll, este nos permite cargar datos
+ * automáticamente sin la necesidad de estar continuamente pulsando un botón para cargar más reportes.
+ * 
+ * Para finalizar tenemos la estructura del contenedor que almacenará las tarjetas con sus respectivos
+ * datos.
+ */
+&nbsp;
+export interface State {
+    /** Cantidad e Informes almacenados */
+    reports: Data[];
+    /** Si quedan informes por ser almacenados (están en el servidor) */
+    hasMore: boolean;
+}
+&nbsp;
+export class Tile extends React.PureComponent&lt;WithTranslation, State&gt; {
+&nbsp;
+    /** Con ella se controla cual va a ser la página en la cual se empezarán a incluir reportes. */
+    public nextPage: number = 0;
+    /** Se encarga de almacenar los datos que vienen del serverData para poder trabajar con ellos. */
+    public cardBook: any = serverAllData;
+&nbsp;
+    public constructor(props: any) {
+        super(props);
+&nbsp;
+        this.fetchMoreData = this.fetchMoreData.bind(this);
+&nbsp;
+        this.state = {
+            reports: [],
+            hasMore: true
+        };
+    }
+&nbsp;
+    /**
+     * @returns {Function} Funcion
+     * @example
+     * // Ejemplo funcion
+     * @description
+     * // Simula la obtención de datos del Servidor.
+     * @param {number} skip - La página que se quiere cargar (se empieza por 0) 
+     * @param {number} top - El numero de tarjetas que se mostraran por cada página.
+     * 
+     */
+    private getCardsFromServer(skip: number, top: number): Data[] {
+        let length: number = this.cardBook["@odata.count"];
+        let startIndex: number = (skip) * top;
+        let endIndex: number = startIndex + top;
+&nbsp;
+        <span class="missing-if-branch" title="else path not taken" >E</span>if (endIndex &lt;= length + top) {
+            return this.cardBook.value.slice(startIndex, endIndex);
+        }
+        else {
+<span class="cstat-no" title="statement not covered" >            return [];</span>
+        }
+&nbsp;
+    }
+&nbsp;
+    /** 
+     * @example
+     * //Example function
+     * @description
+     * // Esta función se encarga de colocar X reportes (los que nosotros queramos mostrar en cada página).
+     * Una vez mostrados los primeros, cambiará de página y llenará esta nuevamente con el numero de 
+     * reportes que se haya acordado.
+     */
+    private cargaPags(): void {
+        let newCards: Data[] = this.getCardsFromServer(this.nextPage, 8);
+        <span class="missing-if-branch" title="if path not taken" >I</span>if (newCards.length === 0) {
+<span class="cstat-no" title="statement not covered" >            this.setState({ hasMore: false });</span>
+        } else {
+            this.nextPage++;
+            let showedCard: Data[] = [];
+            this.state.reports.forEach((cardData): void =&gt; {
+                showedCard.push(cardData);
+            });
+            newCards.forEach((cardData): void =&gt; {
+                //TODO: revisar que ese valor no esté ya en el array
+                showedCard.push(cardData);
+            });
+            this.setState({ reports: showedCard });
+        }
+    }
+&nbsp;
+&nbsp;
+    /**
+     * @returns {Function} Funcion
+     * @example
+     * //Example function
+     * @description
+     * // Esta función se encarga de controlar si quedan más reportes por mostrar, si no quedan,
+     * no se puede seguir haciendo scroll.
+     */
+<span class="fstat-no" title="function not covered" >    pu</span>blic fetchMoreData(): void {
+<span class="cstat-no" title="statement not covered" >        if (this.state.reports.length &gt;= this.cardBook.value.length) {</span>
+<span class="cstat-no" title="statement not covered" >            this.setState({ hasMore: false });</span>
+        }
+        else {
+<span class="cstat-no" title="statement not covered" >            this.cargaPags();</span>
+        }
+    };
+&nbsp;
+    public componentDidMount(): void {
+        /**
+         * Si la página a mostrar no tiene elementos, volverá a la función de la página para cargar datos 
+         */
+        <span class="missing-if-branch" title="else path not taken" >E</span>if (this.state.reports.length === 0) {
+            this.cargaPags();
+        }
+    }
+&nbsp;
+    public render(): JSX.Element {
+&nbsp;
+        /** Prepara las propiedades que tendrá el componente de scroll infinito. Se encarga de controlar cuantos elementos se van a mostrar
+         * el tamaño que tendra el componente, cada cuanto tiene que mostrar elementos, que mensaje mostrar cuando esté todo cargado...
+         */
+        const config = {
+            dataLength: this.state.reports.length,
+            next: this.fetchMoreData,
+            hasMore: this.state.hasMore,
+            height: 900,
+            loader: "",
+            endMessage:
+                &lt;div className="divEndMessage"&gt;
+                    &lt;b className="endMessage"&gt;Todos los elementos cargados&lt;/b&gt;
+                &lt;/div&gt;
+        };
+&nbsp;
+        /** Aquí se controla si hay reportes en el array, en caso de que si, crea la tarjeta, le asigna una ID y la maqueta. */
+        let myReports: JSX.Element[] = [];
+&nbsp;
+&nbsp;
+        if (this.state.reports.length &gt; 0) {
+            this.state.reports.forEach((cardData): void =&gt; {
+                let myCardEle = &lt;div key={'card_sample_'.concat(cardData.id)} id={'card_sample_' + cardData.id} className="controlTarjetas"&gt;
+                    &lt;CardRender key={'CardRender_'.concat(cardData.id)} data={cardData} /&gt;
+                &lt;/div&gt;;
+                myReports.push(myCardEle);
+            });
+        }
+&nbsp;
+        /** Prepara el contenedor donde irán alojadas los reportes, estas se mostrarán en 4 columnas. El infinity scroll hace referencia
+         * al componente que nos permite que solo carge los elementos haciendo scroll sobre el elemento ROW, no sobre la página entera (window).
+         */
+        return (
+            &lt;div className='control-pane'&gt;
+                &lt;div className="control-section card-control-section tile_layout"&gt;
+                    &lt;div className=' e-card-layout ' &gt;
+                        &lt;InfiniteScroll {...config}&gt;
+                            &lt;div className="row rowStyle"&gt;
+                                &lt;div id="target"&gt;
+                                    {myReports}
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;br /&gt;
+                            &lt;div &gt;&lt;button id="boton" hidden={!this.state.hasMore} onClick={this.cargaPags.bind(this, "")} className="newCard" &gt;Cargar reportes&lt;/button&gt;&lt;/div&gt;
+                        &lt;/InfiniteScroll&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        );
+    }
+}
+&nbsp;
+export default withTranslation()(Tile);
+&nbsp;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Jun 05 2019 12:32:56 GMT+0200 (GMT+02:00)
+</div>
+</div>
+<script src="..\..\prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="..\..\sorter.js"></script>
+</body>
+</html>

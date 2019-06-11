@@ -1,0 +1,367 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/tile tests should render as expected when passing required properties 1`] = `
+"<Tile i18n={{...}}>
+  <div className=\\"control-pane\\">
+    <div className=\\"control-section card-control-section tile_layout\\">
+      <div className=\\" e-card-layout \\">
+        <InfiniteScroll dataLength={8} next={[Function: bound fetchMoreData]} hasMore={true} height={900} loader=\\"\\" endMessage={{...}} pullDownToRefreshContent={{...}} releaseToRefreshContent={{...}} pullDownToRefreshThreshold={100} disableBrowserPullToRefresh={true}>
+          <div style={{...}}>
+            <div className=\\"infinite-scroll-component \\" style={{...}}>
+              <div className=\\"row rowStyle\\">
+                <div id=\\"target\\">
+                  <div id=\\"card_sample_6fdd1b8f-b0b4-4b40-931f-fb95bb7e9b9a\\" className=\\"controlTarjetas\\">
+                    <withI18nextTranslation(CardRender) data={{...}}>
+                      <CardRender data={{...}} t={[Function: fixedT]} i18n={{...}} tReady={true}>
+                        <div className=\\"e-card\\">
+                          <div className=\\"e-card-header\\">
+                            <div className=\\"e-card-header-title\\" title=\\"Nº Informe\\">
+                              <i title=\\"En Proceso\\" className=\\"icon-hour-glass iconosTarjetas\\" />
+                              ReporteReporte21
+                            </div>
+                          </div>
+                          <div className=\\"e-card-content\\" style={{...}}>
+                            <div>
+                              <b title=\\"Cliente\\">
+                                Cliente
+                                :
+                              </b>
+                               
+                              Reporte1
+                              <br />
+                              <b title=\\"Fecha Inicio\\">
+                                Fecha Inicio
+                                :
+                              </b>
+                               
+                              09/04/2019
+                              <br />
+                              <b title=\\"Fecha estimada\\">
+                                Fecha estimada
+                                :
+                              </b>
+                               
+                              09/04/2019
+                            </div>
+                          </div>
+                          <div className=\\"e-card-actions iconos\\">
+                            <i title=\\"Ir a detalle\\" className=\\"icon-link iconosTarjetas\\" />
+                            <i title=\\"Mostrar muestras\\" className=\\"icon-file-empty iconosTarjetas\\" onClick={[Function: bound getAlert]} />
+                          </div>
+                        </div>
+                      </CardRender>
+                    </withI18nextTranslation(CardRender)>
+                  </div>
+                  <div id=\\"card_sample_75e4a24e-b5a3-4349-a562-d343f5a1c6e9\\" className=\\"controlTarjetas\\">
+                    <withI18nextTranslation(CardRender) data={{...}}>
+                      <CardRender data={{...}} t={[Function: fixedT]} i18n={{...}} tReady={true}>
+                        <div className=\\"e-card\\">
+                          <div className=\\"e-card-header\\">
+                            <div className=\\"e-card-header-title\\" title=\\"Nº Informe\\">
+                              <i title=\\"Finalizado\\" className=\\"icon-checkbox-checked iconosTarjetas\\" />
+                              Reporte2
+                            </div>
+                          </div>
+                          <div className=\\"e-card-content\\" style={{...}}>
+                            <div>
+                              <b title=\\"Cliente\\">
+                                Cliente
+                                :
+                              </b>
+                               
+                              Reporte2
+                              <br />
+                              <b title=\\"Fecha Inicio\\">
+                                Fecha de finalización
+                                :
+                              </b>
+                               
+                              24/01/2019
+                              <br />
+                              <b title=\\"Fecha estimada\\">
+                                Fecha de caducidad
+                                :
+                              </b>
+                               
+                              04/02/2024
+                            </div>
+                          </div>
+                          <div className=\\"e-card-actions iconos\\">
+                            <i title=\\"Mostrar muestras\\" className=\\"icon-file-empty iconosTarjetas\\" onClick={[Function: bound getAlert]} />
+                            <i title=\\"Descargar\\" className=\\"icon-download3 iconosTarjetas\\" />
+                          </div>
+                        </div>
+                      </CardRender>
+                    </withI18nextTranslation(CardRender)>
+                  </div>
+                  <div id=\\"card_sample_7c790df6-b2bd-4539-a4b5-17c88ab4d517\\" className=\\"controlTarjetas\\">
+                    <withI18nextTranslation(CardRender) data={{...}}>
+                      <CardRender data={{...}} t={[Function: fixedT]} i18n={{...}} tReady={true}>
+                        <div className=\\"e-card\\">
+                          <div className=\\"e-card-header\\">
+                            <div className=\\"e-card-header-title\\" title=\\"Nº Informe\\">
+                              <i title=\\"Finalizado\\" className=\\"icon-checkbox-checked iconosTarjetas\\" />
+                              Reporte3
+                            </div>
+                          </div>
+                          <div className=\\"e-card-content\\" style={{...}}>
+                            <div>
+                              <b title=\\"Cliente\\">
+                                Cliente
+                                :
+                              </b>
+                               
+                              Reporte3
+                              <br />
+                              <b title=\\"Fecha Inicio\\">
+                                Fecha de finalización
+                                :
+                              </b>
+                               
+                              24/01/2019
+                              <br />
+                              <b title=\\"Fecha estimada\\">
+                                Fecha de caducidad
+                                :
+                              </b>
+                               
+                              04/02/2024
+                            </div>
+                          </div>
+                          <div className=\\"e-card-actions iconos\\">
+                            <i title=\\"Ir a detalle\\" className=\\"icon-link iconosTarjetas\\" />
+                            <i title=\\"Mostrar muestras\\" className=\\"icon-file-empty iconosTarjetas\\" onClick={[Function: bound getAlert]} />
+                            <i title=\\"Descargar\\" className=\\"icon-download3 iconosTarjetas\\" />
+                          </div>
+                        </div>
+                      </CardRender>
+                    </withI18nextTranslation(CardRender)>
+                  </div>
+                  <div id=\\"card_sample_a8d1029a-a7c1-4b24-9840-19e95cc56fcd\\" className=\\"controlTarjetas\\">
+                    <withI18nextTranslation(CardRender) data={{...}}>
+                      <CardRender data={{...}} t={[Function: fixedT]} i18n={{...}} tReady={true}>
+                        <div className=\\"e-card\\">
+                          <div className=\\"e-card-header\\">
+                            <div className=\\"e-card-header-title\\" title=\\"Nº Informe\\">
+                              <i title=\\"Finalizado\\" className=\\"icon-checkbox-checked iconosTarjetas\\" />
+                              Reporte4
+                            </div>
+                          </div>
+                          <div className=\\"e-card-content\\" style={{...}}>
+                            <div>
+                              <b title=\\"Cliente\\">
+                                Cliente
+                                :
+                              </b>
+                               
+                              Reporte4
+                              <br />
+                              <b title=\\"Fecha Inicio\\">
+                                Fecha de finalización
+                                :
+                              </b>
+                               
+                              24/01/2019
+                              <br />
+                              <b title=\\"Fecha estimada\\">
+                                Fecha de caducidad
+                                :
+                              </b>
+                               
+                              04/02/2024
+                            </div>
+                          </div>
+                          <div className=\\"e-card-actions iconos\\">
+                            <i title=\\"Ir a detalle\\" className=\\"icon-link iconosTarjetas\\" />
+                            <i title=\\"Mostrar muestras\\" className=\\"icon-file-empty iconosTarjetas\\" onClick={[Function: bound getAlert]} />
+                            <i title=\\"Descargar\\" className=\\"icon-download3 iconosTarjetas\\" />
+                          </div>
+                        </div>
+                      </CardRender>
+                    </withI18nextTranslation(CardRender)>
+                  </div>
+                  <div id=\\"card_sample_f5ae40b6-f2d2-40fb-a62f-6070806a043d\\" className=\\"controlTarjetas\\">
+                    <withI18nextTranslation(CardRender) data={{...}}>
+                      <CardRender data={{...}} t={[Function: fixedT]} i18n={{...}} tReady={true}>
+                        <div className=\\"e-card\\">
+                          <div className=\\"e-card-header\\">
+                            <div className=\\"e-card-header-title\\" title=\\"Nº Informe\\">
+                              <i title=\\"Finalizado\\" className=\\"icon-checkbox-checked iconosTarjetas\\" />
+                              Reporte5
+                            </div>
+                          </div>
+                          <div className=\\"e-card-content\\" style={{...}}>
+                            <div>
+                              <b title=\\"Cliente\\">
+                                Cliente
+                                :
+                              </b>
+                               
+                              Reporte5
+                              <br />
+                              <b title=\\"Fecha Inicio\\">
+                                Fecha de finalización
+                                :
+                              </b>
+                               
+                              24/01/2019
+                              <br />
+                              <b title=\\"Fecha estimada\\">
+                                Fecha de caducidad
+                                :
+                              </b>
+                               
+                              07/02/2024
+                            </div>
+                          </div>
+                          <div className=\\"e-card-actions iconos\\">
+                            <i title=\\"Ir a detalle\\" className=\\"icon-link iconosTarjetas\\" />
+                            <i title=\\"Mostrar muestras\\" className=\\"icon-file-empty iconosTarjetas\\" onClick={[Function: bound getAlert]} />
+                            <i title=\\"Descargar\\" className=\\"icon-download3 iconosTarjetas\\" />
+                          </div>
+                        </div>
+                      </CardRender>
+                    </withI18nextTranslation(CardRender)>
+                  </div>
+                  <div id=\\"card_sample_f7f47a21-352f-43ce-9ae5-8c0dca111481\\" className=\\"controlTarjetas\\">
+                    <withI18nextTranslation(CardRender) data={{...}}>
+                      <CardRender data={{...}} t={[Function: fixedT]} i18n={{...}} tReady={true}>
+                        <div className=\\"e-card\\">
+                          <div className=\\"e-card-header\\">
+                            <div className=\\"e-card-header-title\\" title=\\"Nº Informe\\">
+                              <i title=\\"Finalizado\\" className=\\"icon-checkbox-checked iconosTarjetas\\" />
+                              Reporte6
+                            </div>
+                          </div>
+                          <div className=\\"e-card-content\\" style={{...}}>
+                            <div>
+                              <b title=\\"Cliente\\">
+                                Cliente
+                                :
+                              </b>
+                               
+                              Reporte6
+                              <br />
+                              <b title=\\"Fecha Inicio\\">
+                                Fecha de finalización
+                                :
+                              </b>
+                               
+                              11/01/2019
+                              <br />
+                              <b title=\\"Fecha estimada\\">
+                                Fecha de caducidad
+                                :
+                              </b>
+                               
+                              22/02/2024
+                            </div>
+                          </div>
+                          <div className=\\"e-card-actions iconos\\">
+                            <i title=\\"Ir a detalle\\" className=\\"icon-link iconosTarjetas\\" />
+                            <i title=\\"Mostrar muestras\\" className=\\"icon-file-empty iconosTarjetas\\" onClick={[Function: bound getAlert]} />
+                            <i title=\\"Descargar\\" className=\\"icon-download3 iconosTarjetas\\" />
+                          </div>
+                        </div>
+                      </CardRender>
+                    </withI18nextTranslation(CardRender)>
+                  </div>
+                  <div id=\\"card_sample_7fdd1b8f-b0b4-4b40-931f-fb95bb7e9b9a\\" className=\\"controlTarjetas\\">
+                    <withI18nextTranslation(CardRender) data={{...}}>
+                      <CardRender data={{...}} t={[Function: fixedT]} i18n={{...}} tReady={true}>
+                        <div className=\\"e-card\\">
+                          <div className=\\"e-card-header\\">
+                            <div className=\\"e-card-header-title\\" title=\\"Nº Informe\\">
+                              <i title=\\"En Proceso\\" className=\\"icon-hour-glass iconosTarjetas\\" />
+                              Reporte7
+                            </div>
+                          </div>
+                          <div className=\\"e-card-content\\" style={{...}}>
+                            <div>
+                              <b title=\\"Cliente\\">
+                                Cliente
+                                :
+                              </b>
+                               
+                              Reporte7
+                              <br />
+                              <b title=\\"Fecha Inicio\\">
+                                Fecha Inicio
+                                :
+                              </b>
+                               
+                              09/04/2019
+                              <br />
+                              <b title=\\"Fecha estimada\\">
+                                Fecha estimada
+                                :
+                              </b>
+                               
+                              09/04/2019
+                            </div>
+                          </div>
+                          <div className=\\"e-card-actions iconos\\">
+                            <i title=\\"Ir a detalle\\" className=\\"icon-link iconosTarjetas\\" />
+                            <i title=\\"Mostrar muestras\\" className=\\"icon-file-empty iconosTarjetas\\" onClick={[Function: bound getAlert]} />
+                          </div>
+                        </div>
+                      </CardRender>
+                    </withI18nextTranslation(CardRender)>
+                  </div>
+                  <div id=\\"card_sample_8fdd1b8f-b0b4-4b40-931f-fb95bb7e9b9a\\" className=\\"controlTarjetas\\">
+                    <withI18nextTranslation(CardRender) data={{...}}>
+                      <CardRender data={{...}} t={[Function: fixedT]} i18n={{...}} tReady={true}>
+                        <div className=\\"e-card\\">
+                          <div className=\\"e-card-header\\">
+                            <div className=\\"e-card-header-title\\" title=\\"Nº Informe\\">
+                              <i title=\\"En Proceso\\" className=\\"icon-hour-glass iconosTarjetas\\" />
+                              Reporte8
+                            </div>
+                          </div>
+                          <div className=\\"e-card-content\\" style={{...}}>
+                            <div>
+                              <b title=\\"Cliente\\">
+                                Cliente
+                                :
+                              </b>
+                               
+                              Reporte8
+                              <br />
+                              <b title=\\"Fecha Inicio\\">
+                                Fecha Inicio
+                                :
+                              </b>
+                               
+                              09/04/2019
+                              <br />
+                              <b title=\\"Fecha estimada\\">
+                                Fecha estimada
+                                :
+                              </b>
+                               
+                              09/04/2019
+                            </div>
+                          </div>
+                          <div className=\\"e-card-actions iconos\\">
+                            <i title=\\"Mostrar muestras\\" className=\\"icon-file-empty iconosTarjetas\\" onClick={[Function: bound getAlert]} />
+                          </div>
+                        </div>
+                      </CardRender>
+                    </withI18nextTranslation(CardRender)>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <div>
+                <button id=\\"boton\\" hidden={false} onClick={[Function: bound cargaPags]} className=\\"newCard\\">
+                  Cargar reportes
+                </button>
+              </div>
+            </div>
+          </div>
+        </InfiniteScroll>
+      </div>
+    </div>
+  </div>
+</Tile>"
+`;

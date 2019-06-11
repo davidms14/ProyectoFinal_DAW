@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/cardRender tests should render as expected when passing required properties 1`] = `
+"<div className=\\"e-card\\">
+  <div className=\\"e-card-header\\">
+    <div className=\\"e-card-header-title\\" title=\\"Nº Informe\\">
+      <i title=\\"En Proceso\\" className=\\"icon-hour-glass iconosTarjetas\\" />
+      2019USAM17
+    </div>
+  </div>
+  <div className=\\"e-card-content\\" style={{...}}>
+    <div>
+      <b title=\\"Cliente\\">
+        Cliente
+        :
+      </b>
+       
+      testcreate
+      <br />
+      <b title=\\"Fecha Inicio\\">
+        Fecha Inicio
+        :
+      </b>
+       
+      05/06/2019
+      <br />
+      <b title=\\"Fecha estimada\\">
+        Fecha estimada
+        :
+      </b>
+       
+      05/06/2019
+    </div>
+  </div>
+  <div className=\\"e-card-actions iconos\\">
+    <i title=\\"Ir a detalle\\" className=\\"icon-link iconosTarjetas\\" />
+    <i title=\\"Mostrar muestras\\" className=\\"icon-file-empty iconosTarjetas\\" onClick={[Function: bound getAlert]} />
+  </div>
+</div>"
+`;

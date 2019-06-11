@@ -1,0 +1,189 @@
+{
+  "home": {
+    "filters": {
+      "order": "Nº Informe",
+      "entry": "Fecha Inicio",
+      "expected": "Fecha estimada",
+      "sample": "Muestra",
+      "status": "Estado",
+      "client": "Cliente",
+      "finish":"Fecha de finalización",
+      "timed":"Fecha de caducidad"
+    },
+    "dateRange": {
+      "today": "Hoy",
+      "thisWeek": "Esta semana",
+      "thisMonth": "Este mes",
+      "lastMonth": "El mes pasado",
+      "lastYear": "El año pasado"
+    },
+    "tabs": {
+      "filters": "Filtros",
+      "queries": "Avanzado"
+    },
+    "table": {
+      "reportNumber": "Nº Informe",
+      "client": "Cliente",
+      "entities": "Entidades",
+      "entryDate": "Fecha Inicio",
+      "expectedDate": "Fecha estimada",
+      "order": "Pedido",
+      "sample": "Muestras Asociadas",
+      "report": "Acciones",
+      "status": "Estado",
+      "samples": "Muestras"
+    },
+    "toast": {
+      "error": {
+        "apply": "Filtro avanzado no encontrado",
+        "noName": "Es requerido añadir un nombre al filtro",
+        "noContent": "Es requerido añadir contenido al filtro",
+        "setFavoriteFilter": "Es requerido seleccionar un filtro"
+      },
+      "success": {
+        "save": "Filtro guardado correctamente"
+      }
+    },
+    "modal": {
+      "saveQuery": {
+        "title": "Guardar búsqueda",
+        "name": "Añadir nombre a la búsqueda",
+        "save": "Guardar",
+        "placeholder": "Introduce un nombre",
+        "favorite": "Guardar filtro como favorito",
+        "languages": "Guardar en otros idiomas"
+      },
+      "applyQuery": {
+        "title": "Aplicar filtros avanzados guardados",
+        "name": "Seleccionar el nombre del filtro",
+        "apply": "Aplicar",
+        "placeholder": "Introduce un nombre",
+        "favorite":"Seleccionar como filtro favorito"
+      }
+    },
+    "buttons": {
+      "search": "Filtrar",
+      "apply": "Aplicar filtros guardados",
+      "save": "Guardar filtro"
+    },
+    "banner": {
+      "favorite": {
+        "button": "Desactivar",
+        "text": "Se está aplicando un filtro favorito:"
+      }
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "usersManagement": "Gestión de usuarios"
+  },
+  "status": {
+    "inprogress": "En Proceso",
+    "finalized": "Finalizado",
+    "cancelled": "Anulado"
+  },
+  "detail": {
+    "report": "Nº Informe",
+    "entry": "F. Entrada",
+    "status": "Estado",
+    "client": "Cliente",
+    "expected": "Prevista",
+    "download": "Descargar",
+    "table": {
+      "description": "Descripción",
+      "reference": "Referencia",
+      "advancement": "Adelanto"
+    }
+  },
+  "icons": {
+    "inprogress": "En proceso",
+    "finalized": "Finalizado",
+    "canceled": "Cancelado",
+    "detail": "Ir a detalle",
+    "samples": "Mostrar muestras",
+    "download": "Descargar",
+    "advancement": "Pedir adelanto",
+    "cerrar": "Cerrar"
+  },
+  "chat": {
+    "send": "Enviar",
+    "noMessages": "No hay mensajes disponibles para el filtro seleccionado",
+    "toggleDropdowns": "Show|Hide options",
+    "optionsMessage": "Selecciona por referencia o por servicio para cargar una conversación",
+    "load": "Cargar conversación",
+    "defaultDropdownsValue": "Ninguno",
+    "InitialMessage": "Mensaje inicial de creación de la conversación. Bienvenid@s",
+    "textArea": "Escribe tu mensaje",
+    "privateMessage": "Mensaje privado",
+    "modal": {
+      "accept": "Aceptar",
+      "cancel": "Cancelar",
+      "deleteMessage": "Eliminar Este mensaje"
+    }
+  },
+  "syncfusion": {
+    "daterangepicker": {
+      "startLabel": "Fecha inicio",
+      "endLabel": "Fecha fin",
+      "applyText": "Aceptar",
+      "cancelText": "Cancelar",
+      "selectedDays": "Días seleccionados",
+      "days": "días",
+      "customRange": "Rango Personalizado"
+    },
+    "querybuilder": {
+      "EmployeeID": "Número de empleado",
+      "FirstName": "Nombre",
+      "TitleOfCourtesy": "Saludo",
+      "Title": "Título",
+      "HireDate": "Fecha de contrato",
+      "Country": "País",
+      "City": "Ciudad",
+      "AddGroup": "Añadir grupo",
+      "AddCondition": "Añadir condicion",
+      "Edit": "EDITAR",
+      "SelectField": "Selecciona un campo",
+      "DeleteRule": "Eliminar esta condición",
+      "DeleteGroup": "Eliminar grupo",
+      "SelectOperator": "Seleccionar operador",
+      "StartsWith": "Empieza con",
+      "EndsWith": "Acaba con",
+      "Contains": "Contiene",
+      "Equal": "Igual",
+      "NotEqual": "No igual",
+      "LessThan": "Menos que",
+      "LessThanOrEqual": "Menos o igual que",
+      "GreaterThan": "Más que",
+      "GreaterThanOrEqual": "Más o igual que",
+      "Between": "Entre",
+      "NotBetween": "No entre",
+      "In": "En",
+      "NotIn": "No en",
+      "Remove": "ELIMINAR",
+      "ValidationMessage": "Este campo es requerido"
+    },
+    "columnData": {
+      "client": "Cliente",
+      "reportNumber": "Nº informe",
+      "sample": "Muestra",
+      "entryDate": "Fecha inicio",
+      "expectedDate": "Fecha estimada"
+    },
+    "grid": {
+      "EmptyRecord": "No hay resultados que mostrar"
+    },
+    "pager": {
+      "currentPageInfo": "{0} de {1} páginas",
+      "totalItemsInfo": "({0} Informes)",
+      "firstPageTooltip": "A la primera página",
+      "lastPageTooltip": "A la última página",
+      "nextPageTooltip": "Página siguiente",
+      "previousPageTooltip": "Volver a la última página",
+      "nextPagerTooltip": "",
+      "previousPagerTooltip": ""
+    },
+    "dropdowns": {
+      "noRecordsTemplate": "No se encuentran resultados"
+    }
+  }
+}

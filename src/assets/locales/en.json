@@ -1,0 +1,36 @@
+{
+  "home": {
+    "filters": {
+      "order": "____",
+      "orderPlaceholder": "12345",
+      "entry": "____",
+      "entryPlaceholder": "01/22/2000 - 02/30/2001",
+      "expected": "____",
+      "expectedPlaceholder": "02/20/2000 - 03/28/2001",
+      "sample": "____",
+      "samplePlaceholder": "12345",
+      "status": "_____",
+      "statusPlaceholder": "____",
+      "client": "____",
+      "clientPlaceholder": "Aitex"
+    },
+    "tabs": {
+      "filters": "____",
+      "queries": "____"
+    },
+    "table": {
+      "clientId": "_____",
+      "clientName": "_____"
+    }
+  },
+  "syncfusion": {
+    "daterangepicker": {
+        "startLabel": "_____",
+        "endLabel": "_____",
+        "applyText": "_____",
+        "cancelText": "_____",
+        "selectedDays": "_____",
+        "days": "_____"
+    }
+  }
+}
