@@ -211,7 +211,7 @@ problemas que me han surgido con ellos y para finalizar un apartado de
 conclusiones, inquietudes, así como los problemas que he tenido en
 general y una webgrafía con las páginas más importantes utilizadas.
 
-3. Tecnologías utilizadas
+3.Tecnologías utilizadas
 =========================
 
 3.0. JavaScript
@@ -487,7 +487,7 @@ solucionar. Más abajo explicaré como acceder a dicha vista.
 
 (Imagen 8: Logo ESLint).
 
-4. Otras herramientas / tecnologías
+4.Otras herramientas / tecnologías
 ===================================
 
 4.0. NPM
@@ -650,7 +650,7 @@ de LemonCode\]
 
 (Imagen 17: GitHub de LemonCode).
 
-5. Mi componente
+5.Mi componente
 ================
 
 Una vez acabada la parte de recursos utilizados vamos a pasar a como ha
@@ -1426,7 +1426,7 @@ utilizada ha sido Bootstrap, aunque en menor medida.
 
 (Imagen 59: Código CSS)
 
-6. Resultados obtenidos y problemas.
+6.Resultados obtenidos y problemas.
 ====================================
 
 Llegados a este punto y finalmente tras haber finalizado con la
@@ -1474,7 +1474,7 @@ proyecto apenas he llegado a tener una gran cantidad de contratiempos,
 lo único que podrían ser problemas serían el hecho de no haber podido
 terminar los apartados que he mencionado antes a tiempo.
 
-7. Miscelánea
+7.Miscelánea
 =============
 
 Otras herramientas o apartados que querría mencionar por encima en este
