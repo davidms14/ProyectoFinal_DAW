@@ -21,8 +21,8 @@ Indice
 
 [8.WebGrafía](./web.md)
 
-0. Agradecimientos
--------------------------
+0.Agradecimientos
+==================
 
 En primer lugar, agradecer al instituto CIP FP Batoy por darme la
 oportunidad de realizar las prácticas (las que creo, serán las últimas)
@@ -47,8 +47,8 @@ Han conseguido hacer de estas prácticas las mejores hasta la fecha y que
 junto a todo el Equipo de Sistemas y Desarrollo, han logrado integrarme
 como uno más del grupo.
 
-1. Introducción
--------------------------
+1.Introducción
+===============
 
 Para empezar, me gustaría mencionar que este no era el primer proyecto
 que yo tenía asignado de cara a la realización de las prácticas. La idea
@@ -67,8 +67,8 @@ Debido a que en la empresa se me permitió trabajar con las tecnologías
 empleadas en esta, decidí no llevar acabo lo mencionado anteriormente e
 iniciar un proyecto diferente.
 
-2. Proyecto
--------------------------
+2.Proyecto
+===========
 
 2.0. Lugar de realización
 -------------------------
