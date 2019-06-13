@@ -21,7 +21,8 @@ Indice
 
 [8.WebGrafía](./web.md)
 
-# 0. Agradecimientos
+0. Agradecimientos
+==================
 
 En primer lugar, agradecer al instituto CIP FP Batoy por darme la
 oportunidad de realizar las prácticas (las que creo, serán las últimas)
@@ -46,7 +47,8 @@ Han conseguido hacer de estas prácticas las mejores hasta la fecha y que
 junto a todo el Equipo de Sistemas y Desarrollo, han logrado integrarme
 como uno más del grupo.
 
-# 1. Introducción
+1. Introducción
+===============
 
 Para empezar, me gustaría mencionar que este no era el primer proyecto
 que yo tenía asignado de cara a la realización de las prácticas. La idea
@@ -65,16 +67,16 @@ Debido a que en la empresa se me permitió trabajar con las tecnologías
 empleadas en esta, decidí no llevar acabo lo mencionado anteriormente e
 iniciar un proyecto diferente.
 
-# 2. Proyecto
+2. Proyecto
+===========
 
-
-## 2.0. Lugar de realización
-
+2.0. Lugar de realización
+-------------------------
 
 La empresa seleccionada como ya he mencionado es Aitex.
 
-### 2.0.0. Sobre la empresa
-
+2.0.0. Sobre la empresa
+-----------------------
 
 Se trata de una asociación de carácter privado sin ánimo de lucro,
 conocida por ser un importante instituto tecnológico textil, cuyo
@@ -104,8 +106,8 @@ red](./img/imagen48.png "Estructura de red de la empresa por plantas")
 
 (Imagen 1: Estructura de red de la empresa por plantas)
 
-# 2.1. Motivos del proyecto
-
+2.1. Motivos del proyecto
+-------------------------
 
 Como bien he dicho, el poder realizar un proyecto con herramientas y
 tecnologías con las cuales no había trabajado me pareció mejor idea que
@@ -120,7 +122,8 @@ tuviera que pasar un periodo de formación más largo. Pese a esto me
 parece que tomé la mejor decisión ya que he aprendido muchos nuevos
 conceptos.
 
-# 2.2. Descripción del proyecto.
+2.2. Descripción del proyecto.
+------------------------------
 
 El proyecto que se me planteó a realizar en la empresa consistía en
 realizar un componente al que poder efectuar una serie de pruebas o test
@@ -155,8 +158,8 @@ los cuales permiten llevar a cabo distintas acciones las cuales se
 explicarán más adelante. Esto sería lo más remarcable de la imagen
 superior.
 
-## 2.3. Objetivo general del proyecto.
-
+2.3. Objetivo general del proyecto.
+-----------------------------------
 
 Los principales objetivos que se aspiran a cumplir de cara a la
 realización de este trabajo son los siguientes:
@@ -175,8 +178,8 @@ realización de este trabajo son los siguientes:
     importantes de mi periodo de prácticas aquí. Con esto se comprobará
     la calidad del código.
 
-## 2.4. Finalidad y posibles usos.
-
+2.4. Finalidad y posibles usos.
+-------------------------------
 
 Como ya he mencionado, la idea es hacer un componente funcional. El
 objetivo de este es simple ya que se encargará de proporcionar la
@@ -196,8 +199,8 @@ fuera algo similar a esto, con la diferencia de que se trata de un
 trabajo más serio y no tendrá tanto color. Se encargará de poder llevar
 a cabo simplemente las funcionalidades básicas.
 
-## 2.5. Apartados a tratar
-
+2.5. Apartados a tratar
+-----------------------
 
 Ahora pasaré a explicar todas las tecnologías que se han empleado
 durante la realización del proyecto pero encima, sin entrar mucho en
@@ -208,11 +211,11 @@ problemas que me han surgido con ellos y para finalizar un apartado de
 conclusiones, inquietudes, así como los problemas que he tenido en
 general y una webgrafía con las páginas más importantes utilizadas.
 
-# 3. Tecnologías utilizadas
+3. Tecnologías utilizadas
+=========================
 
-
-## 3.0. JavaScript
-
+3.0. JavaScript
+---------------
 
 Principalmente, al inicio del proyecto, todo el código estaba compuesto
 por este lenguaje.
@@ -236,8 +239,8 @@ con JS, a partir del cual nace mi componente:
 
 (Imagen 4: Trozo de código JS del componente)
 
-## 3.1. TypeScript
-
+3.1. TypeScript
+---------------
 
 \"TypeScript es un lenguaje de programación de código abierto
 desarrollado por Microsoft, el cual cuenta con herramientas de
@@ -261,8 +264,8 @@ uso que le di fue para tipar los datos, las funciones... Entendiendo por
 tipar, el hecho de decirle a una variable que tipo de valores va a
 manejar, que tipo de valores devolverá una función, etc.:
 
-## 3.2. React
-
+3.2. React
+----------
 
 \"Es una librería JavaScript de código abierto para crear interfaces de
 usuario con el objetivo de animar al desarrollo de aplicaciones de una
@@ -286,8 +289,8 @@ su manera de trabajar.
 Actualmente, durante la realización de mi proyecto en mayo de 2019,
 estoy trabajando con la versión 16.8.0.
 
-## 3.3. Redux
-
+3.3. Redux
+----------
 
 Esta es una librería que no he acabado de acoplar al proyecto debido a
 la falta de tiempo pero que como he visto y trabajado unas semanas con
@@ -326,8 +329,8 @@ datos que recibe a través de un API REST o webService (en mi caso, el
 listado de los reportes). Así que la finalidad de este es que cambiase
 la forma de tomar los datos.
 
-## 3.4. Jest
-
+3.4. Jest
+---------
 
 "Se trata de un framework que podría definirse como una plataforma de
 prueba universal, con capacidad para adaptarse a cualquier biblioteca o
@@ -338,8 +341,8 @@ usarlo, así como el hecho de permitir diferentes tipos de tests."
 Durante la realización de este proyecto se está trabajando con la
 versión 23.6.0.
 
-## 3.5. Enzyme
-
+3.5. Enzyme
+-----------
 
 Podríamos explicar esta herramienta junto con la anterior debido a que
 se trata de una utilidad de test para pruebas con react, esta nos
@@ -361,8 +364,8 @@ adapter](./img/imagen60.png "Fichero de configuración de adapter")
 
 Estoy trabajando con la versión 3.9.0.
 
-## 3.6. NodeJS
-
+3.6. NodeJS
+-----------
 
 La manera más sencilla de definir nodeJS sería: "Es un entorno
 JavaScript de lado de servidor que utiliza un modelo asíncrono y
@@ -374,8 +377,8 @@ cabo el desarrollo de aplicaciones orientadas a redes de comunicación.
 
 Estoy trabajando con la versión 10.15.3.
 
-## 3.7. i18n
-
+3.7. i18n
+---------
 
 A la hora de crear una aplicación que pueda estar enfocada a personas de
 diferentes nacionalidades, uno de los principales problemas que
@@ -397,8 +400,8 @@ componente](./img/imagen61.png "Envolviendo componente cardRender")
 
 (Imagen 7: Envolviendo componente de cardRender).
 
-## 3.8. Moment JS
-
+3.8. Moment JS
+--------------
 
 Se trata de una librería de JS que tiene como finalidad ayudarnos a
 solventar los problemas que puedan surgir con las fechas que utilicemos
@@ -417,8 +420,8 @@ opciones a realizar entre fechas:
 
 Entre otras opciones.
 
-## 3.9. Webpack
-
+3.9. Webpack
+------------
 
 Podríamos definir Webpack como un empaquetador de módulos, este permite
 la generación de un archivo único que posea todos los módulos que
@@ -444,8 +447,8 @@ De todas formas, también posee bastantes inconvenientes ya que se trata
 de un programa que puede resultar complejo tanto por su código fuente,
 como por la documentación, la cuál es bastante pobre.
 
-## 3.10. esLint
-
+3.10. esLint
+------------
 
 "Los linters son una herramienta. Estas tienen como función base,
 analizar nuestro código, y a partir de una serie de reglas definidas por
@@ -484,11 +487,11 @@ solucionar. Más abajo explicaré como acceder a dicha vista.
 
 (Imagen 8: Logo ESLint).
 
-# 4. Otras herramientas / tecnologías
+4. Otras herramientas / tecnologías
+===================================
 
-
-## 4.0. NPM
-
+4.0. NPM
+--------
 
 A lo largo de la realización del proyecto, ha sido necesaria la
 instalación de los paquetes mencionados en el punto anterior, para ello
@@ -519,8 +522,8 @@ paquetes superiores:
 Como podemos observar, es muy sencillo de usar npm para realizar
 acciones de instalación, más adelante explicaré otros usos posibles.
 
-## 4.1. MarkDown
-
+4.1. MarkDown
+-------------
 
 A la hora de realizar la documentación de este proyecto, comencé
 utilizando un simple editor de textos como bien puede ser el Word, el
@@ -554,8 +557,8 @@ código y cuál es el resultado.
 
 (Imagen 13: Visualizador de MarkDown).
 
-## 4.2. Office 365
-
+4.2. Office 365
+---------------
 
 Una de las herramientas que tiene la empresa y que, junto con la
 siguiente, serían de lo que más he utilizado es Office 365. Además, al
@@ -591,8 +594,8 @@ de informática se encontraban aquí.
 
 (Imagen 15: Plataforma de videos)
 
-## 4.3. Visual Studio Code (VSC)
-
+4.3. Visual Studio Code (VSC)
+-----------------------------
 
 Junto con Office 365, Visual Studio Code sería la herramienta más
 importante que he utilizado durante las prácticas ya que al fin y al
@@ -626,8 +629,8 @@ documentación que crees en diferentes formatos.
 
 (Imagen 16: Interfaz VSC).
 
-## 4.4. Documentación de LemonCode
-
+4.4. Documentación de LemonCode
+-------------------------------
 
 Para acabar con el apartado de recursos que he utilizado o se me han
 ofrecido, creo que no estaría de más mencionar los cursos de LemonCode,
@@ -647,15 +650,15 @@ de LemonCode\]
 
 (Imagen 17: GitHub de LemonCode).
 
-# 5. Mi componente
-
+5. Mi componente
+================
 
 Una vez acabada la parte de recursos utilizados vamos a pasar a como ha
 sido el proceso de creación de mi componente y en general cuál es su
 funcionamiento.
 
-## 5.1. Preparación y montaje.
-
+5.1. Preparación y montaje.
+---------------------------
 
 El primer paso fue hablar con el tutor encargado en la empresa, sobre
 cuál iba a ser el proyecto que llevaría a cabo durante el período que
@@ -750,8 +753,8 @@ El hecho de utilizar TS nos puede ayudar a tener controladas las
 variables de nuestro código y así evitarnos dolores de cabeza ya que
 sabremos en todo momento que tipo de valores están manejando.
 
-## 5.2. React
-
+5.2. React
+----------
 
 La mayor parte de los problemas llegados a este punto consistían en
 saber cómo funcionaba React, la toma de datos, la modificación del
@@ -834,7 +837,8 @@ El estado del reporte ahora se muestra junto al nombre y los datos
 mostrados en el reporte solo son los 3 que observamos. Además, según el
 estado que tenga la tarea, el icono de descarga aparece o no.
 
-## 5.3. esLint
+5.3. esLint
+-----------
 
 Como bien había mencionado más arriba en su apartado dedicado, esLint
 nos ayuda a mejorar el código que escribimos, para ellos tenemos una
@@ -863,7 +867,8 @@ produciendo, la línea y la columna del error o el aviso e incluso nos
 deja una URL que nos explica cómo podemos solucionar el problema que
 podamos tener.
 
-## 5.4. Internalización y moment
+5.4. Internalización y moment
+-----------------------------
 
 En mi caso, el componente en si no posee una gran cantidad de texto que
 podríamos internacionalizar, pero aun así hay palabras que necesitaba
@@ -972,8 +977,8 @@ es algo así como seguir una estructura de pirámide o por niveles,
 tenemos que ir entrando en el apartado que nos interesa e ir poniendo la
 ruta para sacar finalmente la traducción.
 
-## 5.5. Estructura de ficheros
-
+5.5. Estructura de ficheros
+---------------------------
 
 Una vez terminada la mayor parte de la programación creo que no está de
 más mencionar como ha quedado la estructura del proyecto.
@@ -1062,8 +1067,8 @@ almacenando en esta carpeta.
 
 Ésta sería la estructura que conforma mi proyecto en su versión final.
 
-## 5.6. Funcionamiento del componente
-
+5.6. Funcionamiento del componente
+----------------------------------
 
 Llegados a este punto, el aspecto de las tarjetas y en general del
 proyecto sería casi el definitivo. Primero explicaré que elementos
@@ -1214,8 +1219,8 @@ la lista de tarjetas.
 
 (Imagen 47: muestra del resultado final del componente).
 
-## 5.7. Tests
-
+5.7. Tests
+----------
 
 Tras acabar de configurar la internalización y el uso de moment,
 prácticamente el componente está acabado. La única parte que necesita
@@ -1381,8 +1386,8 @@ emplearemos uno u otro.
 
 (Imagen 58: Ejemplo de test de funcionalidad).
 
-## 5.8. CSS
-
+5.8. CSS
+--------
 
 Para acabar con las explicaciones del proceso de creación del
 componente, voy a terminar mencionando un apartado que ha tenido mucha
@@ -1421,8 +1426,8 @@ utilizada ha sido Bootstrap, aunque en menor medida.
 
 (Imagen 59: Código CSS)
 
-# 6. Resultados obtenidos y problemas.
-
+6. Resultados obtenidos y problemas.
+====================================
 
 Llegados a este punto y finalmente tras haber finalizado con la
 programación, documentación y el testeo de componentes, creo que es buen
@@ -1469,8 +1474,8 @@ proyecto apenas he llegado a tener una gran cantidad de contratiempos,
 lo único que podrían ser problemas serían el hecho de no haber podido
 terminar los apartados que he mencionado antes a tiempo.
 
-# 7. Miscelánea
-
+7. Miscelánea
+=============
 
 Otras herramientas o apartados que querría mencionar por encima en este
 punto serían las siguientes:
@@ -1494,8 +1499,8 @@ en algún punto a causa de un error...
     estos sean lo más correctos posibles. No es algo que deba de
     implementar el proyecto, pero siempre está bien conocerlo.
 
-# 8.WebGrafía
-
+8.WebGrafía
+===========
 
 -   https://github.com/Lemoncode - Braulio Diez - 2019 -- Página de
     LemonCode.
