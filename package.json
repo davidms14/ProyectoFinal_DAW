@@ -92,7 +92,7 @@
     "redux-mock-store": "^1.5.3",
     "ts-jest": "^24.0.2",
     "typescript": "^3.4.3",
-    "webpack": "4.28.3",
+    "webpack": "5.94.0",
     "webpack-dev-server": "3.1.14",
     "webpack-manifest-plugin": "2.0.4"
   },
